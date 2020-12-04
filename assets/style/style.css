@@ -1,0 +1,76 @@
+.main-prompt{
+
+    background-color: lavender;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3vw;
+}
+
+.dashboard{
+    background-color:rgba(204, 204, 219, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.choices{
+    margin: 5px auto;
+    padding:10px 0px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #343a40;
+    border: solid 1px #343a40;
+    text-align: center;
+}
+
+.choices:focus{
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #343a40;
+    border: solid 1px #343a40;
+    height: 50px;
+}
+
+.score-container, .time-container{
+    padding: 20px;
+}
+
+#score, #time {
+    font-size: 4vw;
+}
+
+
+#cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;  
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  z-index: 1;
+  background-color: rgba(50,50,50, 0.9);
+}
+
+#high-scores, #score-list{
+    padding: 20px;
+    text-align: center;
+    color: white
+}
+
+#score-list{
+    overflow: auto;
+}
+
+p{
+    color: white;
+}

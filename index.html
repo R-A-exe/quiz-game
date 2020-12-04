@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="cover" hidden>
+        <div id ="high-scores" class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>High Scores</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="score-list" class="container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-prompt">
+        <div class="row">
+            <div class="col">
+                <h1>Press START to begin the quiz. <br>Be careful, every wrong answer costs you 10 seconds!</h1><br>
+            </div>
+        </div>
+        <div class="row nav-buttons">
+            <div class="col">
+                <button id="test" class="btn btn-outline-success start-button">START</button>
+                <button class="btn btn-outline-dark highscore-button">High Scores</button>
+            </div>
+        </div>
+        <div class="row form" hidden>
+            <div class="col-lg-4 offset-lg-4">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Enter your initials for the High Score board:</label>
+                        <input type="name" class="form-control" id="initials">
+                    </div>
+                    <button id="submit-init" class="btn btn-outline-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container dashboard" hidden>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="choices" data-choice="a"></div>
+                    </div>
+                    <div class="row">
+                        <div class="choices" data-choice="b"></div>
+                    </div>
+                    <div class="row">
+                        <div class="choices" data-choice="c"></div>
+                    </div>
+                    <div class="row">
+                        <div class="choices" data-choice="d"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container score-container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Score</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="score">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container time-container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Time</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="time">60</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/index-script.js"></script>
+
+</html>
