@@ -1,3 +1,9 @@
+h1, h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20pt;
+}
+
+/* Main prompt that will display instructions and questions */
 .main-prompt{
 
     background-color: lavender;
@@ -7,11 +13,7 @@
     text-align: center;
 }
 
-h1, h2{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 3vw;
-}
-
+/* Dashboard that displays answers, score, and remaining time */
 .dashboard{
     background-color:rgba(204, 204, 219, 0.5);
     border-radius: 20px;
@@ -20,6 +22,7 @@ h1, h2{
     text-align: center;
 }
 
+/* Answer choice buttons */
 .choices{
     margin: 5px auto;
     padding:10px 0px;
@@ -31,25 +34,17 @@ h1, h2{
     text-align: center;
 }
 
-.choices:focus{
-    margin: auto;
-    width: 100%;
-    background-color: transparent;
-    border-radius: 10px;
-    color: #343a40;
-    border: solid 1px #343a40;
-    height: 50px;
-}
-
+/* Sections of the dashboard that enclose the score and time*/
 .score-container, .time-container{
     padding: 20px;
 }
 
+/* Score and time font */
 #score, #time {
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
-
+/* Page cover that shows when High Scores button is clicked */
 #cover{
   width: 100%;
   height: 100%;
@@ -61,16 +56,16 @@ h1, h2{
   background-color: rgba(50,50,50, 0.9);
 }
 
+/* High Scores title section and list section formatting */
 #high-scores, #score-list{
     padding: 20px;
     text-align: center;
     color: white
 }
 
+/* List section formatting*/
 #score-list{
-    overflow: auto;
-}
-
-p{
+    max-height: 50vh;
+    overflow: scroll;
     color: white;
 }
