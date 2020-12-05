@@ -32,7 +32,10 @@ $(".choices").click(function () {
         updateScore();
         loadQuestion();
     } else {
+        var timeDisplay = $("#time");
         time -= 10;
+        timeDisplay.css("color", "red") 
+        setTimeout(function(){timeDisplay.css("color", "black")}, 1000)
         if (time <= 0) {
             console.log("Time's up")
             endQuiz();
@@ -62,8 +65,11 @@ function loadQuestion() {
 
 //Function to update score when correct answer is chosen
 function updateScore() {
+    var scoreDisplay = $("#score");
     score++;
-    $("#score").text(score);
+    scoreDisplay.text(score);
+    scoreDisplay.css("color", "green") 
+    setTimeout(function(){scoreDisplay.css("color", "black")}, 1000)
 }
 
 
